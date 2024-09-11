@@ -291,8 +291,8 @@ importers:
         specifier: ^5.6.0
         version: 5.6.0(webpack@5.94.0(@swc/core@1.6.13(@swc/helpers@0.5.5))(webpack-cli@5.1.4))
       jsdom:
-        specifier: 24.1.3
-        version: 24.1.3
+        specifier: 25.0.0
+        version: 25.0.0
       jss:
         specifier: ^10.10.0
         version: 10.10.0
@@ -1604,7 +1604,7 @@ importers:
     devDependencies:
       '@codspeed/vitest-plugin':
         specifier: ^3.1.1
-        version: 3.1.1(vite@5.3.4(@types/node@20.16.5)(terser@5.27.0))(vitest@2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@24.1.3)(terser@5.27.0))
+        version: 3.1.1(vite@5.3.4(@types/node@20.16.5)(terser@5.27.0))(vitest@2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@25.0.0)(terser@5.27.0))
       '@emotion/react':
         specifier: ^11.13.3
         version: 11.13.3(@types/react@18.3.4)(react@18.3.1)
@@ -1633,8 +1633,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5(vitest@2.0.5)
       jsdom:
-        specifier: ^24.1.3
-        version: 24.1.3
+        specifier: ^25.0.0
+        version: 25.0.0
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -1643,7 +1643,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       vitest:
         specifier: 2.0.5
-        version: 2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@24.1.3)(terser@5.27.0)
+        version: 2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@25.0.0)(terser@5.27.0)
 
 packages:
 
@@ -7149,6 +7149,15 @@ packages:
       canvas:
         optional: true
 
+  jsdom@25.0.0:
+    resolution: {integrity: sha512-OhoFVT59T7aEq75TVw9xxEfkXgacpqAhQaYgP9y/fDqWQCMB/b1H66RfmPm/MaeaAIU9nDwMOVTlPN51+ao6CQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      canvas: ^2.11.2
+    peerDependenciesMeta:
+      canvas:
+        optional: true
+
   jsesc@0.5.0:
     resolution: {integrity: sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==}
     hasBin: true
@@ -11297,11 +11306,11 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@codspeed/vitest-plugin@3.1.1(vite@5.3.4(@types/node@20.16.5)(terser@5.27.0))(vitest@2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@24.1.3)(terser@5.27.0))':
+  '@codspeed/vitest-plugin@3.1.1(vite@5.3.4(@types/node@20.16.5)(terser@5.27.0))(vitest@2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@25.0.0)(terser@5.27.0))':
     dependencies:
       '@codspeed/core': 3.1.1
       vite: 5.3.4(@types/node@20.16.5)(terser@5.27.0)
-      vitest: 2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@24.1.3)(terser@5.27.0)
+      vitest: 2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@25.0.0)(terser@5.27.0)
     transitivePeerDependencies:
       - debug
 
@@ -13448,7 +13457,7 @@ snapshots:
       pathe: 1.1.2
       sirv: 2.0.4
       tinyrainbow: 1.2.0
-      vitest: 2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@24.1.3)(terser@5.27.0)
+      vitest: 2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@25.0.0)(terser@5.27.0)
 
   '@vitest/utils@2.0.5':
     dependencies:
@@ -16783,6 +16792,34 @@ snapshots:
       - supports-color
       - utf-8-validate
 
+  jsdom@25.0.0:
+    dependencies:
+      cssstyle: 4.0.1
+      data-urls: 5.0.0
+      decimal.js: 10.4.3
+      form-data: 4.0.0
+      html-encoding-sniffer: 4.0.0
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.5
+      is-potential-custom-element-name: 1.0.1
+      nwsapi: 2.2.12
+      parse5: 7.1.2
+      rrweb-cssom: 0.7.1
+      saxes: 6.0.0
+      symbol-tree: 3.2.4
+      tough-cookie: 4.1.4
+      w3c-xmlserializer: 5.0.0
+      webidl-conversions: 7.0.0
+      whatwg-encoding: 3.1.1
+      whatwg-mimetype: 4.0.0
+      whatwg-url: 14.0.0
+      ws: 8.18.0
+      xml-name-validator: 5.0.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
   jsesc@0.5.0: {}
 
   jsesc@2.5.2: {}
@@ -20004,7 +20041,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.27.0
 
-  vitest@2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@24.1.3)(terser@5.27.0):
+  vitest@2.0.5(@types/node@20.16.5)(@vitest/ui@2.0.5)(jsdom@25.0.0)(terser@5.27.0):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.5
@@ -20028,7 +20065,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.16.5
       '@vitest/ui': 2.0.5(vitest@2.0.5)
-      jsdom: 24.1.3
+      jsdom: 25.0.0
     transitivePeerDependencies:
       - less
       - lightningcss
