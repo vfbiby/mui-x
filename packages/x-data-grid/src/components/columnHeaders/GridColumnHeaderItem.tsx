@@ -173,6 +173,7 @@ function GridColumnHeaderItem(props: GridColumnHeaderItemProps) {
     () => ({
       onClick: publish('columnHeaderClick'),
       onDoubleClick: publish('columnHeaderDoubleClick'),
+      onContextMenu: publish('columnHeaderContextMenu'),
       onMouseOver: publish('columnHeaderOver'), // TODO remove as it's not used
       onMouseOut: publish('columnHeaderOut'), // TODO remove as it's not used
       onMouseEnter: publish('columnHeaderEnter'), // TODO remove as it's not used
